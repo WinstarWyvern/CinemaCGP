@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="movieDescriptionLabel" type="id" />
+    <item name="movieRating" type="id" />
+    <item name="movieRatingLabel" type="id" />
+</resources>
