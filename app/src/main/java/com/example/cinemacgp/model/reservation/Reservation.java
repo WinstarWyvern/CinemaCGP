@@ -2,15 +2,13 @@ package com.example.cinemacgp.model.reservation;
 
 public class Reservation {
     private String personName;
-    private int number;
+    private Integer number;
     private String movieName;
-    private String date;
 
-    public Reservation(String personName, int number, String movieName, String date) {
+    public Reservation(String personName, Integer number, String movieName) {
         this.personName = personName;
         this.number = number;
         this.movieName = movieName;
-        this.date = date;
     }
 
     public String getPersonName() {
@@ -21,11 +19,11 @@ public class Reservation {
         this.personName = personName;
     }
 
-    public int getNumber() {
+    public Integer getNumber() {
         return number;
     }
 
-    public void setNumber(int number) {
+    public void setNumber(Integer number) {
         this.number = number;
     }
 
@@ -35,13 +33,5 @@ public class Reservation {
 
     public void setMovieName(String movieName) {
         this.movieName = movieName;
-    }
-
-    public String getDate() {
-        return date;
-    }
-
-    public void setDate(String date) {
-        this.date = date;
     }
 }

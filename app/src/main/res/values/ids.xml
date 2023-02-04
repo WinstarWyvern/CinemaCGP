@@ -3,4 +3,6 @@
     <item name="movieDescriptionLabel" type="id" />
     <item name="movieRating" type="id" />
     <item name="movieRatingLabel" type="id" />
+    <item name="reservationPersonName" type="id" />
+    <item name="reservationNumber" type="id" />
 </resources>
