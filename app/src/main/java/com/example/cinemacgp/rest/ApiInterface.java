@@ -1,6 +1,6 @@
 package com.example.cinemacgp.rest;
 
-import com.example.cinemacgp.model.Example;
+import com.example.cinemacgp.model.movie.Example;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

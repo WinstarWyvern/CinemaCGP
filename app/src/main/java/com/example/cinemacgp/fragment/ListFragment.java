@@ -11,15 +11,13 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.example.cinemacgp.R;
-import com.example.cinemacgp.activity.MainActivity;
 import com.example.cinemacgp.adapter.MovieAdapter;
-import com.example.cinemacgp.model.Example;
-import com.example.cinemacgp.model.Result;
+import com.example.cinemacgp.model.movie.Example;
+import com.example.cinemacgp.model.movie.Result;
 import com.example.cinemacgp.rest.ApiClient;
 import com.example.cinemacgp.rest.ApiInterface;
 

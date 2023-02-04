@@ -15,7 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.example.cinemacgp.R;
 import com.example.cinemacgp.activity.MovieDetail;
-import com.example.cinemacgp.model.Result;
+import com.example.cinemacgp.model.movie.Result;
 
 import java.util.List;
 

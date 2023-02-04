@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.example.cinemacgp.R;
-import com.example.cinemacgp.model.Result;
+import com.example.cinemacgp.model.movie.Result;
 
 public class MovieDetail extends AppCompatActivity {
     public static final String EXTRA_MOVIE = "extra_movie";

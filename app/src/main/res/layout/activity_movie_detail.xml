@@ -145,7 +145,38 @@
             android:textSize="18sp"
             android:layout_marginTop="5dp"/>
 
+        <TextView
+            android:id="@+id/reservationNumberLabel"
+            android:layout_width="match_parent"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#e19083"
+            android:layout_below="@id/movieRating"
+            android:layout_marginVertical="10dp"
+            android:layout_height="wrap_content"
+            android:text="Synopsis : "/>
 
+        <TextView
+            android:id="@+id/reservationPersonNameLabel"
+            android:layout_width="match_parent"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#e19083"
+            android:layout_below="@id/movieRating"
+            android:layout_marginVertical="10dp"
+            android:layout_height="wrap_content"
+            android:text="Synopsis : "/>
+
+        <TextView
+            android:id="@+id/reservationMovieNameLabel"
+            android:layout_width="match_parent"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#e19083"
+            android:layout_below="@id/movieRating"
+            android:layout_marginVertical="10dp"
+            android:layout_height="wrap_content"
+            android:text="Synopsis : "/>
     </RelativeLayout>
 
 </ScrollView>

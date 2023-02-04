@@ -1,4 +1,4 @@
-package com.example.cinemacgp.model;
+package com.example.cinemacgp.model.movie;
 
 import android.os.Parcel;
 import android.os.Parcelable;
