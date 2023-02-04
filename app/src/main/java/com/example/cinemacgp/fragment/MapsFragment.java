@@ -65,7 +65,6 @@ public class MapsFragment extends Fragment implements OnMapReadyCallback{
 
         LatLng theater = new LatLng(latitude, longitude);
         mGoogleMap.addMarker(new MarkerOptions().position(theater).title("This is the Cinema Location"));
-        mGoogleMap.moveCamera(CameraUpdateFactory.newLatLng(theater));
 
         CameraPosition cameraPosition = CameraPosition.builder().target(theater).zoom(16).bearing(0).tilt(45).build();
         mGoogleMap.moveCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
