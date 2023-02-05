@@ -26,4 +26,24 @@ public class ReservationDatabase {
     public ArrayList<Reservation> getAllReservation() {
         return reservations;
     }
+
+    public ArrayList<Reservation> getReservationsByNameOnGoing(String name) {
+        ArrayList<Reservation> filtered = new ArrayList<>();
+        for (Reservation r : reservations) {
+            if (r.getPersonName().equals(name) && r.getStatus() == 1) {
+                filtered.add(r);
+            }
+        }
+        return filtered;
+    }
+
+    public ArrayList<Reservation> getReservationsByNameCompleted(String name) {
+        ArrayList<Reservation> filtered = new ArrayList<>();
+        for (Reservation r : reservations) {
+            if (r.getPersonName().equals(name) && r.getStatus() == 0) {
+                filtered.add(r);
+            }
+        }
+        return filtered;
+    }
 }

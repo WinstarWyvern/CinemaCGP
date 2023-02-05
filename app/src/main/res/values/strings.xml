@@ -13,4 +13,6 @@
     <string name="map_api_key">AIzaSyCY20Q4Dhb-tjCdzU3rAGCwobLp8ofRQQQ</string>
     <string name="cinema_cgp_alpha">Cinema CGP Alpha</string>
     <string name="cinema_cgp_beta">Cinema CGP Beta</string>
+    <string name="completed">Completed</string>
+    <string name="on_going">On Going</string>
 </resources>

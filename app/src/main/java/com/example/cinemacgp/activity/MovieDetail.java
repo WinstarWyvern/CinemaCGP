@@ -93,7 +93,6 @@ public class MovieDetail extends AppCompatActivity {
             Integer num = Integer.parseInt(bookNumber.getText().toString());
             String name = personName.getText().toString();
             reservationDatabase.addReservation(new Reservation(name,num, title));
-            Log.d("jumlah", String.valueOf(reservationDatabase.getAllReservation().size()));
 
             Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);
