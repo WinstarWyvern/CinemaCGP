@@ -6,10 +6,13 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.os.Bundle;
+import android.widget.Button;
 
 import com.example.cinemacgp.R;
+import com.example.cinemacgp.database.ReservationDatabase;
 import com.example.cinemacgp.fragment.HistoryFragment;
 import com.google.android.material.tabs.TabLayout;
 
@@ -20,7 +23,21 @@ public class HistoryActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_history);
 
+        Button onGoing = findViewById(R.id.onGoingBtn);
+        Button completed = findViewById(R.id.completedBtn);
+        ReservationDatabase reservationDatabase = ReservationDatabase.getInstance();
 
+        onGoing.setOnClickListener(view -> {
+            onGoing.setBackgroundColor(Color.parseColor("#ff512e"));
+            completed.setBackgroundColor(Color.parseColor("#ffffff"));
+            loadFragment(new HistoryFragment(reservationDatabase.getReservationsByNameOnGoing("Andi")));
+        });
+
+        completed.setOnClickListener(view -> {
+            completed.setBackgroundColor(Color.parseColor("#ff512e"));
+            onGoing.setBackgroundColor(Color.parseColor("#ffffff"));
+            loadFragment(new HistoryFragment(reservationDatabase.getReservationsByNameOnGoing("Andi")));
+        });
     }
 
     private void loadFragment(Fragment fragment){
