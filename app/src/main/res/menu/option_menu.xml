@@ -5,4 +5,9 @@
         android:icon="@drawable/location_icon"
         app:showAsAction="ifRoom"
         android:title="Maps Icon" />
+
+    <item android:id="@+id/historyButton"
+        android:icon="@drawable/history_icon"
+        app:showAsAction="ifRoom"
+        android:title="History Icon" />
 </menu>

@@ -16,12 +16,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CinemaCGP"
         tools:targetApi="31">
+        <activity
+            android:name=".activity.HistoryActivity"
+            android:label="Booking History"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/map_api_key" />
 
         <activity
             android:name=".activity.MapsActivity"
+            android:label="Theater Location"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -36,6 +46,7 @@
         </activity>
         <activity
             android:name=".activity.MainActivity"
+            android:label="Now Playing Movies"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
