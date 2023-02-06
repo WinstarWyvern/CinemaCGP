@@ -1,7 +1,6 @@
 package com.example.cinemacgp.activity;
 
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -31,7 +30,7 @@ public class MapsActivity extends AppCompatActivity {
         });
 
         secondLocation.setOnClickListener(view -> {
-            latitude = 6.20175020412279;
+            latitude = -6.20175020412279;
             longitude = 106.78223868546155;
             loadFragment(new MapsFragment(longitude, latitude));
         });
