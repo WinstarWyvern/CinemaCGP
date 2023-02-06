@@ -9,7 +9,7 @@
     <string name="movie_poster">Movie Poster</string>
     <string name="movie_detail_title">Movie Detail Title</string>
     <string name="movie_detail_desc">Movie Detail Desc</string>
-<!--        <string name="map_api_key">AIzaSyBT5YY51FLTtfJjPV6XAJBnNRr3JsXcevY</string>-->
+    <!--        <string name="map_api_key">AIzaSyBT5YY51FLTtfJjPV6XAJBnNRr3JsXcevY</string>-->
     <string name="map_api_key">AIzaSyCY20Q4Dhb-tjCdzU3rAGCwobLp8ofRQQQ</string>
     <string name="cinema_cgp_alpha">Cinema CGP Alpha</string>
     <string name="cinema_cgp_beta">Cinema CGP Beta</string>

@@ -7,7 +7,17 @@
     tools:context=".activity.MainActivity">
 
     <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/adFragment"
+        android:name="com.example.cinemacgp.fragment.AdvertisementFragment"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        tools:layout="@layout/fragment_advertisement"
+        android:layout_marginVertical="40dp"
+         />
+
+    <androidx.fragment.app.FragmentContainerView
         android:id="@+id/movieFragment"
+        android:layout_below="@id/adFragment"
         android:name="com.example.cinemacgp.fragment.ListFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

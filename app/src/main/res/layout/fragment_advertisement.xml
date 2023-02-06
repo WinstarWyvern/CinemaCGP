@@ -3,12 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.MapsFragment">
-    
-    <com.google.android.gms.maps.MapView
+    tools:context=".fragment.AdvertisementFragment">
+
+    <ImageView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/mapDisplay"
+        android:layout_height="match_parent"
+        android:id="@+id/imageAd"
         />
 
 </FrameLayout>
