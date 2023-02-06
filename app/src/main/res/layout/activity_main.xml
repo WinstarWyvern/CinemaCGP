@@ -10,7 +10,7 @@
         android:id="@+id/adFragment"
         android:name="com.example.cinemacgp.fragment.AdvertisementFragment"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="150dp"
         tools:layout="@layout/fragment_advertisement"
         android:layout_marginVertical="40dp"
          />
