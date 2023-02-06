@@ -30,7 +30,7 @@ public class ReservationDatabase {
     public ArrayList<Reservation> getReservationsByNameOnGoing(String name) {
         ArrayList<Reservation> filtered = new ArrayList<>();
         for (Reservation r : reservations) {
-            if (r.getPersonName().equals(name) && r.getStatus() == 1) {
+            if (r.getUser().getName().equals(name) && r.getStatus() == 1) {
                 filtered.add(r);
             }
         }
@@ -40,7 +40,7 @@ public class ReservationDatabase {
     public ArrayList<Reservation> getReservationsByNameCompleted(String name) {
         ArrayList<Reservation> filtered = new ArrayList<>();
         for (Reservation r : reservations) {
-            if (r.getPersonName().equals(name) && r.getStatus() == 0) {
+            if (r.getUser().getName().equals(name) && r.getStatus() == 0) {
                 filtered.add(r);
             }
         }

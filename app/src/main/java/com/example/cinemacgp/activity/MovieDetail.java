@@ -15,8 +15,10 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.example.cinemacgp.R;
 import com.example.cinemacgp.database.ReservationDatabase;
+import com.example.cinemacgp.database.UserDatabase;
 import com.example.cinemacgp.model.movie.Result;
 import com.example.cinemacgp.model.reservation.Reservation;
+import com.example.cinemacgp.model.user.User;
 
 public class MovieDetail extends AppCompatActivity {
     public static final String EXTRA_MOVIE = "extra_movie";
@@ -35,12 +37,15 @@ public class MovieDetail extends AppCompatActivity {
         assignElement();
 
         TextView bookNumber = findViewById(R.id.reservationNumber);
-        TextView personName = findViewById(R.id.reservationPersonName);
         bookNumber.setText(String.valueOf(number));
         ImageButton previousArrow = findViewById(R.id.previousArrow);
         ImageButton nextArrow = findViewById(R.id.nextArrow);
         Button submitBtn = findViewById(R.id.submitBtn);
         ReservationDatabase reservationDatabase = ReservationDatabase.getInstance();
+
+        // Get Dummy User
+        UserDatabase userDatabase = UserDatabase.getInstance();
+        User currentUser = userDatabase.getUsers().get(0);
 
         bookNumber.setText(String.valueOf(number));
         previousArrow.setEnabled(false);
@@ -91,8 +96,8 @@ public class MovieDetail extends AppCompatActivity {
 
         submitBtn.setOnClickListener(view -> {
             Integer num = Integer.parseInt(bookNumber.getText().toString());
-            String name = personName.getText().toString();
-            reservationDatabase.addReservation(new Reservation(name,num, title));
+
+            reservationDatabase.addReservation(new Reservation(currentUser,num, title));
 
             Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);

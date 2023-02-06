@@ -194,29 +194,10 @@
                 android:src="@drawable/enabled_next_icon" />
         </RelativeLayout>
 
-        <TextView
-            android:id="@+id/reservationPersonNameLabel"
-            android:layout_width="match_parent"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:textColor="#96be25"
-            android:layout_below="@+id/reservationNumberContainer"
-            android:layout_marginVertical="10dp"
-            android:layout_height="wrap_content"
-            android:text="Reservation Name : "/>
-
-        <EditText
-            android:id="@id/reservationPersonName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:layout_below="@+id/reservationPersonNameLabel"
-            />
-
         <Button
             android:id="@+id/submitBtn"
             android:layout_marginVertical="30dp"
-            android:layout_below="@id/reservationPersonName"
+            android:layout_below="@id/reservationNumberContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Book Room"

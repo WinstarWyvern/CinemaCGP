@@ -34,7 +34,7 @@ public class HistoryActivity extends AppCompatActivity {
         });
 
         completed.setOnClickListener(view -> {
-            completed.setBackgroundColor(Color.parseColor("#ff512e"));
+            completed.setBackgroundColor(Color.parseColor("#96be25"));
             onGoing.setBackgroundColor(Color.parseColor("#ffffff"));
             loadFragment(new HistoryFragment(reservationDatabase.getReservationsByNameOnGoing("Andi")));
         });

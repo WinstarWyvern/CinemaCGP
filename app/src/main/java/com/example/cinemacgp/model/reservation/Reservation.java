@@ -1,28 +1,38 @@
 package com.example.cinemacgp.model.reservation;
 
+import com.example.cinemacgp.model.user.User;
+
 import java.util.Date;
 
 public class Reservation {
-    private String personName;
+    private User user;
     private Integer number;
     private String movieName;
     private int status;
-    private String date;
+    private String createdAt;
 
-    public Reservation(String personName, Integer number, String movieName) {
-        this.personName = personName;
+    public Reservation(User user, Integer number, String movieName) {
+        this.user = user;
         this.number = number;
         this.movieName = movieName;
         this.status = 1;
-        this.date = new Date().toString();
+        this.createdAt = new Date().toString();
     }
 
-    public String getPersonName() {
-        return personName;
+    public User getUser() {
+        return user;
     }
 
-    public void setPersonName(String personName) {
-        this.personName = personName;
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    public String getCreatedAt() {
+        return createdAt;
+    }
+
+    public void setCreatedAt(String createdAt) {
+        this.createdAt = createdAt;
     }
 
     public Integer getNumber() {
@@ -50,10 +60,10 @@ public class Reservation {
     }
 
     public String getDate() {
-        return date;
+        return createdAt;
     }
 
     public void setDate(String date) {
-        this.date = date;
+        this.createdAt = date;
     }
 }
