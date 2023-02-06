@@ -40,6 +40,6 @@ public class AdvertisementFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         ImageView imageAdvertisement = view.findViewById(R.id.imageAd);
-        Glide.with(requireContext()).load("https://i.postimg.cc/kD327C18/discount-Image.png").into(imageAdvertisement);
+        Glide.with(requireContext()).load("https://i.imgur.com/B3aG6iR.png").into(imageAdvertisement);
     }
 }
