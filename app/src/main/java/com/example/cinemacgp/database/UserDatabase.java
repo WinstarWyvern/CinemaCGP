@@ -21,8 +21,8 @@ public class UserDatabase {
     private static ArrayList<User> users = new ArrayList<>();
 
     private static void generateDummyUser() {
-        users.add(new User("Andi"));
-        users.add(new User("Tono"));
+        users.add(new User("Andi",0));
+        users.add(new User("Tono",1));
     }
 
     public ArrayList<User> getUsers() {

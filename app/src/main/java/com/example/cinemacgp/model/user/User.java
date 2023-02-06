@@ -5,10 +5,12 @@ import java.util.Date;
 public class User {
     private String name;
     private String createdAt;
+    private int isAdmin;
 
-    public User(String name) {
+    public User(String name, int isAdmin) {
         this.name = name;
         this.createdAt = new Date().toString();
+        this.isAdmin = isAdmin;
     }
 
     public String getName() {
@@ -25,5 +27,13 @@ public class User {
 
     public void setCreatedAt(String createdAt) {
         this.createdAt = createdAt;
+    }
+
+    public int getIsAdmin() {
+        return isAdmin;
+    }
+
+    public void setIsAdmin(int isAdmin) {
+        this.isAdmin = isAdmin;
     }
 }
