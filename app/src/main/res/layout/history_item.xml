@@ -1,36 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:id="@+id/layoutHistory"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    android:background="#bea925"
+    android:orientation="horizontal">
 
     <TextView
-        android:id="@+id/moviePoster"
+        android:id="@+id/historyNumber"
+        android:layout_gravity="center"
+        android:textAlignment="center"
         android:layout_margin="20dp"
         android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_height="120dp"
+        android:textSize="100sp"
         android:contentDescription="Number" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="120dp"
         android:orientation="vertical"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp">
 
         <TextView
-            android:id="@+id/movieTitle"
+            android:id="@+id/historyTitle"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="Movie Title"
+            android:layout_height="40dp"
+            android:text="Title"
             android:textStyle="bold"
             android:textColor="@color/black"/>
 
         <TextView
-            android:id="@+id/personName"
+            android:id="@+id/historyName"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="Person Name"/>
+            android:layout_height="40dp"
+            android:text="Name"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/historyDate"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Date"/>
 
     </LinearLayout>
 

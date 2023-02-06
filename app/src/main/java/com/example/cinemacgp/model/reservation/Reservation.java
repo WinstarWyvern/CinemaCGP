@@ -11,11 +11,11 @@ public class Reservation {
     private int status;
     private String createdAt;
 
-    public Reservation(User user, Integer number, String movieName) {
+    public Reservation(User user, Integer number, String movieName, int status) {
         this.user = user;
         this.number = number;
         this.movieName = movieName;
-        this.status = 1;
+        this.status = status;
         this.createdAt = new Date().toString();
     }
 

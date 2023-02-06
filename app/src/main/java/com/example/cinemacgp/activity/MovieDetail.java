@@ -97,7 +97,7 @@ public class MovieDetail extends AppCompatActivity {
         submitBtn.setOnClickListener(view -> {
             Integer num = Integer.parseInt(bookNumber.getText().toString());
 
-            reservationDatabase.addReservation(new Reservation(currentUser,num, title));
+            reservationDatabase.addReservation(new Reservation(currentUser,num, title, 1));
 
             Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);

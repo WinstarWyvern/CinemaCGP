@@ -39,6 +39,7 @@
         android:layout_below="@id/historyLinearLayout"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        tools:layout="@layout/fragment_history"
         />
 
 </RelativeLayout>
