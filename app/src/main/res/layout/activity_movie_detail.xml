@@ -156,19 +156,24 @@
             android:layout_height="wrap_content"
             android:text="Total Person [Max 5] : "/>
 
-        <RelativeLayout
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:weightSum="100"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_gravity="center_horizontal"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
             android:id="@+id/reservationNumberContainer"
             android:layout_below="@id/reservationNumberLabel"
             >
 
             <ImageButton
                 android:id="@+id/previousArrow"
-                android:layout_marginHorizontal="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:layout_weight="40"
+                android:gravity="center"
                 android:background="@color/white"
                 android:contentDescription="@string/previous_page"
                 android:src="@drawable/disabled_previous_icon" />
@@ -177,22 +182,21 @@
                 android:id="@+id/reservationNumber"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginHorizontal="20dp"
-                android:layout_centerVertical="true"
-                android:layout_toEndOf="@id/previousArrow"
                 android:textColor="@color/purple_500"
+                android:layout_weight="20"
+                android:gravity="center"
                 android:textSize="24sp" />
 
             <ImageButton
                 android:id="@+id/nextArrow"
-                android:layout_marginHorizontal="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_toEndOf="@id/reservationNumber"
                 android:background="@color/white"
+                android:layout_weight="40"
+                android:gravity="center"
                 android:contentDescription="@string/next_page"
                 android:src="@drawable/enabled_next_icon" />
-        </RelativeLayout>
+        </LinearLayout>
 
         <Button
             android:id="@+id/submitBtn"
